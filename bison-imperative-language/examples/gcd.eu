@@ -1,0 +1,16 @@
+a = readInt()
+b = readInt()
+
+if (a < b) {
+	tmp = b
+	b = a
+	a = tmp
+}
+
+do {
+	tmp = a % b
+	a = b
+	b = tmp
+} while ((a != 0) and (b != 0))
+
+printLine(a + b)
